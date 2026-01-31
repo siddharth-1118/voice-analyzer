@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voice Message Analyzer - AI Communication Assistant</title>
+    <meta name="description"
+        content="Your Personal AI Communication Assistant. Automatically read, summarize, and reply to your messages while you are busy.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <meta name="theme-color" content="#0a0e27">
+</head>
+
+<body>
+    <!-- Dynamic Tech Grid Background -->
+    <div class="tech-grid"></div>
+    <div class="spotlight"></div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">Voice Message Analyzer</div>
+            <a href="#" class="btn btn-primary trigger-download">Download Now</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-container fade-in-up">
+            <h1 class="hero-title">Your Personal AI <span class="highlight">Communication Assistant</span></h1>
+            <p class="hero-subtitle">Automatically read, summarize, and reply to your messages while you are busy.
+                Intelligent enough to handle your calls and chats precisely how you want.</p>
+            <a href="#" class="btn btn-lg btn-glow trigger-download" id="download-hero">Download APK</a>
+        </div>
+    </section>
+
+    <!-- What's New / AI Banner Showcase -->
+    <section class="whats-new section-padding">
+        <div class="container">
+            <h2 class="section-title fade-in-up">What's New: AI Configuration Banner</h2>
+            <div class="banner-showcase fade-in-up">
+                <div class="app-banner-mockup">
+                    <div class="banner-header">
+                        <span class="banner-identity">AI Identity: <span class="highlight-text">VSS Sir</span></span>
+                        <span class="banner-status status-active">ACTIVE</span>
+                    </div>
+                    <div class="banner-stats">
+                        <div class="stat-item">
+                            <span class="stat-label">Voice Summaries</span>
+                            <span class="stat-value text-green">ENABLED</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Auto-Replies</span>
+                            <span class="stat-value text-green">ENABLED</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Integrated Targets</span>
+                            <span class="stat-value">12 Contacts</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="banner-description">
+                    <ul class="feature-list">
+                        <li>
+                            <strong>Real-time Dashboard:</strong> Located right at the top of the app, this banner gives
+                            you an instant overview of your AI's brain.
+                        </li>
+                        <li>
+                            <strong>Live Updates:</strong> As soon as you toggle a switch or change configurations, the
+                            banner updates immediately. Always know exactly what the AI is doing.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Features -->
+    <section class="features" id="features">
+        <div class="container">
+            <h2 class="section-title fade-in-up">Core Features</h2>
+            <div class="features-grid">
+                <div class="feature-card tilt-card fade-in-up">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Smart Summarization</h3>
+                    <p>No more reading long texts. Our AI gives you a concise 2-line summary of every incoming message.
+                    </p>
+                </div>
+                <div class="feature-card tilt-card fade-in-up" style="transition-delay: 0.1s;">
+                    <div class="feature-icon">🤖</div>
+                    <h3>Selective Auto-Reply</h3>
+                    <p>Choose specific WhatsApp contacts or groups. The AI replies on your behalf only to the people you
+                        trust.</p>
+                </div>
+                <div class="feature-card tilt-card fade-in-up" style="transition-delay: 0.2s;">
+                    <div class="feature-icon">📞</div>
+                    <h3>Intelligent Call Handling</h3>
+                    <p>When you're in DND or Mute, the AI tells callers you're busy and sends them a personalized SMS.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Install -->
+    <section class="install" id="install">
+        <div class="container">
+            <h2 class="section-title">How to Install</h2>
+            <div class="install-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <p>Download the APK file to your Android device.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <p>Open the file and click 'Settings' when the 'Unknown Sources' prompt appears.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <p>Toggle 'Allow from this source' and click Install.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <p>&copy; 2026 Voice Message Analyzer. All rights reserved.</p>
+            <a href="mailto:support@voicemessageanalyzer.com" class="footer-link">Contact Us</a>
+        </div>
+    </footer>
+
+    <!-- Download Guide Modal -->
+    <div id="download-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-header">
+                <h2>Voice Message Analyzer: <span class="highlight">Setup Guide</span></h2>
+                <p>Follow these steps exactly to enable your personal AI communication assistant.</p>
+            </div>
+
+            <div class="modal-body">
+                <div class="steps-grid">
+                    <!-- Step 1 -->
+                    <div class="step-card">
+                        <div class="step-icon">📥</div>
+                        <div class="step-content">
+                            <h3>1. Downoad & Install</h3>
+                            <p>Download APK. detailed instruction: Open > Settings > Toggle "Allow from this source" >
+                                Install.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="step-card">
+                        <div class="step-icon">🛡️</div>
+                        <div class="step-content">
+                            <h3>2. Grant Permissions</h3>
+                            <p>Open app > Tap Blue Button. Allow <strong>SMS</strong>, <strong>Contacts</strong>, and
+                                <strong>Phone</strong>.</p>
+                            <p>Enable <strong>Notification Access</strong> when prompted.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 2.1 -->
+                    <div class="step-card highlight-step">
+                        <div class="step-icon">🧠</div>
+                        <div class="step-content">
+                            <h3>2.1. AI Chat Discovery</h3>
+                            <p class="important-note">Critical for WhatsApp Sync!</p>
+                            <ol>
+                                <li>After permissions, phone opens <strong>Accessibility</strong>.</li>
+                                <li>Tap <strong>Installed Services</strong> > <strong>Voice AI Chat Discovery</strong>.
+                                </li>
+                                <li>Toggle <strong>ON</strong> & Allow.</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="step-card">
+                        <div class="step-icon">⚙️</div>
+                        <div class="step-content">
+                            <h3>3. Configure AI</h3>
+                            <p>Enter your name (e.g. VSS). Go to <strong>AI Control Center</strong> to select Apps &
+                                Contacts to reply to.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="step-card">
+                        <div class="step-icon">🤫</div>
+                        <div class="step-content">
+                            <h3>4. Busy Mode</h3>
+                            <p>Put phone on <strong>Silent</strong> to mute AI voice. Ensure "Auto-Reply" is
+                                <strong>ON</strong> to let it handle calls.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="troubleshoot-mini">
+                    <p><strong>⚠️ Trouble?</strong> Uninstall old version first. Check "AI Service" toggle is ON.</p>
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <a href="VoiceMessageAnalyzer.apk" class="btn btn-lg btn-glow" download>Download APK</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Service Worker
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('./sw.js')
+                    .then(registration => {
+                        console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                    })
+                    .catch(err => {
+                        console.log('ServiceWorker registration failed: ', err);
+                    });
+            });
+        }
+
+        // Modal Logic
+        const modal = document.getElementById("download-modal");
+        const downloadBtns = document.querySelectorAll(".trigger-download");
+        const span = document.getElementsByClassName("close-modal")[0];
+
+        // Open modal on click
+        downloadBtns.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                modal.style.display = "block";
+            });
+        });
+
+        // Close on X
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+
+        // Close on click outside
+        window.onclick = function (event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        // Scroll Animation Observer
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target); // Only animate once
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in-up').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Mouse Tracking for Spotlight & Grid
+        document.addEventListener('mousemove', (e) => {
+            const x = e.clientX;
+            const y = e.clientY;
+
+            // Update Global CSS Variables
+            document.documentElement.style.setProperty('--mouse-x', x + 'px');
+            document.documentElement.style.setProperty('--mouse-y', y + 'px');
+
+            // 3D Tilt & Card Glow
+            const cards = document.querySelectorAll('.tilt-card');
+            cards.forEach(card => {
+                const rect = card.getBoundingClientRect();
+                const cardX = rect.left + rect.width / 2;
+                const cardY = rect.top + rect.height / 2;
+
+                // Update Card-specific variables for border glow
+                card.style.setProperty('--card-mouse-x', (x - rect.left) + 'px');
+                card.style.setProperty('--card-mouse-y', (y - rect.top) + 'px');
+
+                const angleX = (cardY - y) / 20;
+                const angleY = (x - cardX) / 20;
+
+                if (Math.abs(angleX) < 30 && Math.abs(angleY) < 30) {
+                    card.style.transform = `perspective(1000px) rotateX(${angleX}deg) rotateY(${angleY}deg) scale(1.02)`;
+                } else {
+                    card.style.transform = `perspective(1000px) rotateX(0) rotateY(0) scale(1)`;
+                }
+            });
+        });
+
+        // Reset cards on mouse leave
+        document.addEventListener('mouseleave', () => {
+            document.querySelectorAll('.tilt-card').forEach(card => {
+                card.style.transform = `perspective(1000px) rotateX(0) rotateY(0) scale(1)`;
+            });
+        });
+
+    </script>
+</body>
+
+</html>
